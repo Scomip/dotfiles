@@ -1,0 +1,27 @@
+@namespace xul url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* Hide horizontal tabs at the top of the window */
+#main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar {
+  opacity: 0;
+  pointer-events: none;
+}
+#main-window:not([tabsintitlebar="true"]) #TabsToolbar {
+  visibility: collapse !important;
+}
+
+/* Hide the "Tree Style Tab" header at the top of the sidebar */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+  display: none;
+}
+
+#navigator-toolbox::after {
+  height: 3px;
+  background-color: #323234;
+  border: none !important;
+}
+
+#sidebar-splitter {
+  width: 3px !important;
+  background-color: #323234 !important;
+  border: none !important;
+}
