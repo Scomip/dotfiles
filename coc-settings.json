@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "/home/scomip/.local/pyenv/shims/python",
+    "python.formatting.provider": "black",
+    "python.jediEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "diagnostic.messageDelay": 0,
+    "codeLens.enable": true
+}

@@ -1,0 +1,7 @@
+Host *
+ForwardAgent yes
+ServerAliveInterval 15
+ServerAliveCountMax 2
+ConnectTimeout 1
+GSSAPIAuthentication no
+GSSAPIDelegateCredentials yes

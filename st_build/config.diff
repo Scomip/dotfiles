@@ -1,0 +1,61 @@
+8c8
+< static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+---
+> static char *font = "JetBrainsMono Nerd Font:pixelsize=16:antialias=true:style=Medium";
+11,12c11
+< /*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
+< /*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
+---
+> 	"Symbola:pixelsize=16:antialias=true:autohint=true",
+62,63c61,62
+< static double minlatency = 8;
+< static double maxlatency = 33;
+---
+> static double minlatency = 20;
+> static double maxlatency = 50;
+123,130c122,129
+< 	"black",
+< 	"red3",
+< 	"green3",
+< 	"yellow3",
+< 	"blue2",
+< 	"magenta3",
+< 	"cyan3",
+< 	"gray90",
+---
+>     "#000004",
+>     "#ff3600",
+>     "#718e3f",
+>     "#ffc552",
+>     "#635196",
+>     "#ff761a",
+>     "#34bfa4",
+>     "#b4b4b9",
+133,140c132,139
+< 	"gray50",
+< 	"red",
+< 	"green",
+< 	"yellow",
+< 	"#5c5cff",
+< 	"magenta",
+< 	"cyan",
+< 	"white",
+---
+>     "#020221",
+>     "#ff8e78",
+>     "#b1bf75",
+>     "#ffd392",
+>     "#99a4bc",
+>     "#ffb07b",
+>     "#8bccbf",
+>     "#f8f8ff",
+145,146c144,145
+< 	"#cccccc",
+< 	"#555555",
+---
+>     "#ffe8c0",
+>     "#020221",
+155c154
+< unsigned int defaultbg = 0;
+---
+> unsigned int defaultbg = 8;
