@@ -1,5 +1,6 @@
 call plug#begin()
 Plug 'scrooloose/nerdtree'
+Plug 'lambdalisue/fern.vim'
 Plug 'itchyny/lightline.vim'
 "Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
@@ -10,11 +11,13 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'elzr/vim-json'
 Plug 'vimwiki/vimwiki'
 "Plug 'w0rp/ale'
-Plug '~/git/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'AndrewRadev/splitjoin.vim'
+
+Plug 'neovim/nvim-lspconfig'
 
 "Plug 'roxma/nvim-yarp'
 "Plug 'ncm2/ncm2'
@@ -52,6 +55,7 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 nnoremap <c-h> <c-w>h
+vnoremap . :normal .<CR>
 
 
 function! StatusDiagnostic() abort
